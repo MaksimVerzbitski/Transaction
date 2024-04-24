@@ -1,0 +1,22 @@
+transaction_id,status,message
+444839466,DECLINED,Invalid card BIN or card type
+3925438678,DECLINED,Invalid IBAN for transfer
+906866107,DECLINED,User account is frozen or does not exist
+671145745,DECLINED,Invalid IBAN for transfer
+2205585969,DECLINED,Invalid IBAN for transfer
+2879881472,DECLINED,Invalid IBAN for transfer
+1715605000,DECLINED,Invalid card BIN or card type
+2778156039,DECLINED,Invalid IBAN for transfer
+3305924489,DECLINED,Invalid card BIN or card type
+3530706276,DECLINED,Invalid IBAN for transfer
+4037672041,DECLINED,Invalid IBAN for transfer
+3130964110,DECLINED,Invalid card BIN or card type
+2045210861,DECLINED,Invalid IBAN for transfer
+539464357,DECLINED,Invalid IBAN for transfer
+3936427449,DECLINED,Invalid IBAN for transfer
+3627355823,DECLINED,Invalid IBAN for transfer
+4057937383,DECLINED,Invalid IBAN for transfer
+2375553067,DECLINED,Invalid IBAN for transfer
+2067075211,DECLINED,Invalid IBAN for transfer
+669182051,DECLINED,Invalid IBAN for transfer
+4276262438,DECLINED,Cannot withdraw with a new IBAN IS807062823251096839823118

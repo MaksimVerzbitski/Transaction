@@ -1,0 +1,41 @@
+transaction_id,status,message
+10101,APPROVED,OK
+10102,DECLINED,Withdrawal amount out of allowed range
+10103,APPROVED,OK
+10103,DECLINED,Transaction ID already processed
+10104,APPROVED,OK
+10105,APPROVED,OK
+10106,APPROVED,OK
+10201,DECLINED,Invalid IBAN for transfer
+10202,DECLINED,Deposit amount out of allowed range
+10203,APPROVED,OK
+10206,APPROVED,OK
+10207,APPROVED,OK
+10208,DECLINED,Deposit amount out of allowed range
+10209,APPROVED,OK
+10210,DECLINED,Cannot withdraw with a new IBAN GB03BARC20040488178514
+11001,DECLINED,User account is frozen or does not exist
+10301,APPROVED,OK
+10302,APPROVED,OK
+10303,APPROVED,OK
+10304,APPROVED,OK
+10305,APPROVED,OK
+10306,APPROVED,OK
+10307,APPROVED,OK
+10308,APPROVED,OK
+10309,DECLINED,Withdrawal amount out of allowed range
+10310,APPROVED,OK
+10311,APPROVED,OK
+10312,APPROVED,OK
+10401,DECLINED,Invalid card BIN or card type
+10402,DECLINED,Invalid account country for IBAN: DE, expected: CA
+10403,APPROVED,OK
+10501,DECLINED,Invalid card BIN or card type
+10502,APPROVED,OK
+10503,DECLINED,Invalid card BIN or card type
+10504,APPROVED,OK
+10601,APPROVED,OK
+10602,APPROVED,OK
+10603,DECLINED,Withdrawal exceeds balance
+10603,DECLINED,Transaction ID already processed
+10703,DECLINED,Account 5449200499486932 is in use by other user

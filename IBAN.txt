@@ -1,0 +1,349 @@
+
+Country	Code	SEPA	Length	Account Check	Branch	IBAN Example
+Albania	AL	No	28			AL35202111090000000001234567
+Andorra	AD	Yes	24			AD1400080001001234567890
+Austria	AT	Yes	20			AT483200000012345864
+Azerbaijan	AZ	No	28			AZ77VTBA00000000001234567890
+Bahrain	BH	No	22			BH02CITI00001077181611
+Belgium	BE	Yes	16			BE71096123456769
+Bosnia and Herzegovina	BA	No	20			BA393385804800211234
+Brazil	BR	No	29			BR1500000000000010932840814P2
+Bulgaria	BG	Yes	22			BG18RZBB91550123456789
+Costa Rica	CR	No	22			CR23015108410026012345
+Croatia	HR	Yes	21			HR1723600001101234565
+Cyprus	CY	Yes	28			CY21002001950000357001234567
+Czech Republic	CZ	Yes	24			CZ5508000000001234567899
+Faroe Islands	FO	No	18			FO9264600123456789
+Greenland	GL	No	18			GL8964710123456789
+Denmark	DK	Yes	18			DK9520000123456789
+Dominican Republic	DO	No	28			DO22ACAU00000000000123456789
+Estonia	EE	Yes	20			EE471000001020145685
+Egypt	EG	No	29			EG800002000156789012345180002
+Finland	FI	Yes	18			FI1410093000123458
+France	FR	Yes	27			FR7630006000011234567890189
+Georgia	GE	No	22			GE60NB0000000123456789
+Germany	DE	Yes	22			DE75512108001245126199
+Gibraltar	GI	Yes	23			GI56XAPO000001234567890
+Greece	GR	Yes	27			GR9608100010000001234567890
+Guatemala	GT	No	28			GT20AGRO00000000001234567890
+Hungary	HU	Yes	28			HU93116000060000000012345676
+Iceland	IS	Yes	26			IS750001121234563108962099
+Ireland	IE	Yes	22			IE64IRCE92050112345678
+Israel	IL	No	23			IL170108000000012612345
+Italy	IT	Yes	27			IT60X0542811101000000123456
+Jordan	JO	No	30			JO71CBJO0000000000001234567890
+Kazakhstan	KZ	No	20			KZ244350000012344567
+Kosovo	XK	No	20			XK051212012345678906
+Kuwait	KW	No	30			KW81CBKU0000000000001234560101
+Latvia	LV	Yes	21			LV97HABA0012345678910
+Lebanon	LB	No	28			LB92000700000000123123456123
+Liechtenstein	LI	Yes	21			LI7408806123456789012
+Lithuania	LT	Yes	20			LT601010012345678901
+Luxembourg	LU	Yes	20			LU120010001234567891
+North Macedonia	MK	No	19			MK07200002785123453
+Malta	MT	Yes	31			MT31MALT01100000000000000000123
+Mauritania	MR	No	27			MR1300020001010000123456753
+Mauritius	MU	No	30			MU43BOMM0101123456789101000MUR
+Moldova	MD	No	24			MD21EX000000000001234567
+Monaco	MC	Yes	27			MC5810096180790123456789085
+Montenegro	ME	No	22			ME25505000012345678951
+Netherlands	NL	Yes	18			NL02ABNA0123456789
+Norway	NO	Yes	15			NO8330001234567
+Pakistan	PK	No	24			PK36SCBL0000001123456702
+Palestine	PS	No	29			PS92PALS000000000400123456702
+Poland	PL	Yes	28			PL10105000997603123456789123
+Portugal	PT	Yes	25			PT50002700000001234567833
+Qatar	QA	No	29			QA54QNBA000000000000693123456
+Romania	RO	Yes	24			RO66BACX0000001234567890
+San Marino	SM	Yes	27			SM76P0854009812123456789123
+Saint Lucia	LC	No	32			LC14BOSL123456789012345678901234
+Sao Tome and Principe	ST	No	25			ST23000200000289355710148
+Saudi Arabia	SA	No	24			SA4420000001234567891234
+Serbia	RS	No	22			RS35105008123123123173
+Slovak Republic	SK	Yes	24			SK8975000000000012345671
+Slovenia	SI	Yes	19			SI56192001234567892
+Spain	ES	Yes	24			ES7921000813610123456789
+Sweden	SE	Yes	24			SE7280000810340009783242
+Switzerland	CH	Yes	21			CH5604835012345678009
+Timor-Leste	TL	No	23			TL380010012345678910106
+Tunisia	TN	No	24			TN5904018104004942712345
+Turkey	TR	No	26			TR320010009999901234567890
+United Arab Emirates	AE	No	23			AE460090000000123456789
+United Kingdom	GB	Yes	22			GB33BUKB20201555555555
+Holy See (the)	VA	Yes	22			VA59001123000012345678
+Virgin Islands, British	VG	No	24			VG07ABVI0000000123456789
+Ukraine	UA	No	29			UA903052992990004149123456789
+Seychelles	SC	No	31			SC74MCBL01031234567890123456USD
+Iraq	IQ	No	23			IQ20CBIQ861800101010500
+Belarus	BY	No	28			BY86AKBB10100000002966000000
+El Salvador	SV	No	28			SV43ACAT00000000000000123123
+Libya	LY	No	25			LY38021001000000123456789
+Sudan	SD	No	18			SD8811123456789012
+Burundi	BI	No	27			BI43220001131012345678912345
+Djibouti	DJ	No	27			DJ2110002010010409943020008
+Russia	RU	No	33			RU0204452560040702810412345678901
+
+
+Albania (AL): ^AL\d{10}[0-9A-Z]{16}$
+Andorra (AD): ^AD\d{10}[0-9A-Z]{12}$
+Austria (AT): ^AT\d{18}$
+Azerbaijan (AZ): ^AZ\d{2}[A-Z]{4}[0-9A-Z]{20}$
+Bahrain (BH): ^BH\d{2}[A-Z]{4}[0-9A-Z]{14}$
+Belgium (BE): ^BE\d{14}$
+Bosnia and Herzegovina (BA): ^BA\d{18}$
+Brazil (BR): ^BR\d{25}[A-Z][0-9A-Z]$
+Bulgaria (BG): ^BG\d{2}[A-Z]{4}\d{6}[0-9A-Z]{8}$
+Costa Rica (CR): ^CR\d{20}$
+Croatia (HR): ^HR\d{19}$
+Cyprus (CY): ^CY\d{10}[0-9A-Z]{16}$
+Czech Republic (CZ): ^CZ\d{22}$
+Faroe Islands (FO): ^FO\d{16}$
+Greenland (GL): ^GL\d{16}$
+Denmark (DK): ^DK\d{16}$
+Dominican Republic (DO): ^DO\d{2}[0-9A-Z]{4}\d{20}$
+Estonia (EE): ^EE\d{18}$
+Egypt (EG): ^EG\d{27}$
+Finland (FI): ^FI\d{16}$
+France (FR): ^FR\d{12}[0-9A-Z]{11}\d{2}$
+Georgia (GE): ^GE\d{2}[A-Z]{2}\d{16}$
+Germany (DE): ^DE\d{20}$
+Gibraltar (GI): ^GI\d{2}[A-Z]{4}[0-9A-Z]{15}$
+Greece (GR): ^GR\d{9}[0-9A-Z]{16}$
+Guatemala (GT): ^GT\d{2}[0-9A-Z]{24}$
+Hungary (HU): ^HU\d{26}$
+Iceland (IS): ^IS\d{24}$
+Ireland (IE): ^IE\d{2}[A-Z]{4}\d{14}$
+Israel (IL): ^IL\d{21}$
+Italy (IT): ^IT\d{2}[A-Z]\d{10}[0-9A-Z]{12}$
+Jordan (JO): ^JO\d{2}[A-Z]{4}\d{4}[0-9A-Z]{18}$
+Kazakhstan (KZ): ^KZ\d{5}[0-9A-Z]{13}$
+Kosovo (XK): ^XK\d{18}$
+Kuwait (KW): ^KW\d{2}[A-Z]{4}[0-9A-Z]{22}$
+Latvia (LV): ^LV\d{2}[A-Z]{4}[0-9A-Z]{13}$
+Lebanon (LB): ^LB\d{6}[0-9A-Z]{20}$
+Liechtenstein (LI): ^LI\d{7}[0-9A-Z]{12}$
+Lithuania (LT): ^LT\d{18}$
+Luxembourg (LU): ^LU\d{5}[0-9A-Z]{13}$
+North Macedonia (MK): ^MK\d{5}[0-9A-Z]{10}\d{2}$
+Malta (MT): ^MT\d{2}[A-Z]{4}\d{5}[0-9A-Z]{18}$
+Mauritania (MR): ^MR\d{25}$
+Mauritius (MU): ^MU\d{2}[A-Z]{4}\d{19}[A-Z]{3}$
+Moldova (MD): ^MD\d{2}[0-9A-Z]{20}$
+Monaco (MC): ^MC\d{12}[0-9A-Z]{11}\d{2}$
+Montenegro (ME): ^ME\d{20}$
+Netherlands (NL): ^NL\d{2}[A-Z]{4}\d{10}$
+Norway (NO): ^NO\d{13}$
+Pakistan (PK): ^PK\d{2}[A-Z]{4}[0-9A-Z]{16}$
+Palestine (PS): ^PS\d{2}[A-Z]{4}[0-9A-Z]{21}$
+Poland (PL): ^PL\d{26}$
+Portugal (PT): ^PT\d{23}$
+Qatar (QA): ^QA\d{2}[A-Z]{4}[0-9A-Z]{21}$
+Romania (RO): ^RO\d{2}[A-Z]{4}[0-9A-Z]{16}$
+San Marino (SM): ^SM\d{2}[A-Z]\d{10}[0-9A-Z]{12}$
+Saint Lucia (LC): ^LC\d{2}[A-Z]{4}[0-9A-Z]{24}$
+Sao Tome and Principe (ST): ^ST\d{23}$
+Saudi Arabia (SA): ^SA\d{4}[0-9A-Z]{18}$
+Serbia (RS): ^RS\d{20}$
+Slovak Republic (SK): ^SK\d{22}$
+Slovenia (SI): ^SI\d{17}$
+Spain (ES): ^ES\d{22}$
+Sweden (SE): ^SE\d{22}$
+Switzerland (CH): ^CH\d{7}[0-9A-Z]{12}$
+Timor-Leste (TL): ^TL\d{21}$
+Tunisia (TN): ^TN\d{22}$
+Turkey (TR): ^TR\d{7}[0-9A-Z]{17}$
+United Arab Emirates (AE): ^AE\d{21}$
+United Kingdom (GB): ^GB\d{2}[A-Z]{4}\d{14}$
+Holy See (VA): ^VA\d{20}$
+Virgin Islands, British (VG): ^VG\d{2}[A-Z]{4}\d{16}$
+Ukraine (UA): ^UA\d{8}[0-9A-Z]{19}$
+Seychelles (SC): ^SC\d{2}[A-Z]{4}\d{20}[A-Z]{3}$
+Iraq (IQ): ^IQ\d{2}[A-Z]{4}[0-9A-Z]{15}$
+Belarus (BY): ^BY\d{2}[A-Z]{4}[0-9A-Z]{20}$
+El Salvador (SV): ^SV\d{2}[A-Z]{4}[0-9A-Z]{20}$
+Libya (LY): ^LY\d{23}$
+Sudan (SD): ^SD\d{16}$
+Burundi (BI): ^BI\d{2}[0-9A-Z]{10}[0-9A-Z]{12}$
+Djibouti (DJ): ^DJ\d{25}$
+Russia (RU): ^RU\d{2}[0-9A-Z]{20}[0-9A-Z]{9}$
+
+
+// own method to manipulate with countries => hard code i know => went nuts
+
+private static Map<String, String> initializeCountryCodes() {
+        Map<String, String> codes = new HashMap<>();
+        codes.put("USA", "US"); // United States
+        codes.put("GBR", "GB"); // United Kingdom
+        codes.put("BRA", "BR"); // Brazil
+        codes.put("CHL", "CL"); // Chile
+        codes.put("EGY", "EG"); // Egypt
+        codes.put("LBN", "LB"); // Lebanon
+        codes.put("BGD", "BD"); // Bangladesh
+        codes.put("IND", "IN"); // India
+        codes.put("LKA", "LK"); // Sri Lanka
+        codes.put("NPL", "NP"); // Nepal
+        codes.put("SGP", "SG"); // Singapore
+        codes.put("RUS", "RU"); // Russia
+        codes.put("MMR", "MM"); // Myanmar
+        codes.put("VNM", "VN"); // Vietnam
+        codes.put("ARG", "AR"); // Argentina
+        codes.put("JPN", "JP"); // Japan
+        codes.put("MAR", "MA"); // Morocco
+        codes.put("AUS", "AU"); // Australia
+        codes.put("MYS", "MY"); // Malaysia
+        codes.put("HUN", "HU"); // Hungary
+        codes.put("KOR", "KR"); // South Korea
+        codes.put("HKG", "HK"); // Hong Kong
+        codes.put("IDN", "ID"); // Indonesia
+        codes.put("PER", "PE"); // Peru
+        codes.put("QAT", "QA"); // Qatar
+        codes.put("LCA", "LC"); // Saint Lucia
+        codes.put("VCT", "VC"); // Saint Vincent and the Grenadines
+        codes.put("DMA", "DM"); // Dominica
+        codes.put("GRD", "GD"); // Grenada
+        codes.put("ECU", "EC"); // Ecuador
+        codes.put("COL", "CO"); // Colombia
+        codes.put("CHE", "CH"); // Switzerland
+        codes.put("ESP", "ES"); // Spain
+        codes.put("BRB", "BB"); // Barbados
+        codes.put("PRY", "PY"); // Paraguay
+        codes.put("FIN", "FI"); // Finland
+        codes.put("BEL", "BE"); // Belgium
+        codes.put("NLD", "NL"); // Netherlands
+        codes.put("TUR", "TR"); // Turkey
+        codes.put("ARE", "AE"); // United Arab Emirates
+        codes.put("DOM", "DO"); // Dominican Republic
+        codes.put("ZAF", "ZA"); // South Africa
+        codes.put("PRI", "PR"); // Puerto Rico
+        codes.put("FRA", "FR"); // France
+        codes.put("CUW", "CW"); // Curaçao
+        codes.put("VEN", "VE"); // Venezuela
+        codes.put("JAM", "JM"); // Jamaica
+        codes.put("TCA", "TC"); // Turks and Caicos Islands
+        codes.put("TTO", "TT"); // Trinidad and Tobago
+        codes.put("BOL", "BO"); // Bolivia
+        codes.put("THA", "TH"); // Thailand
+        codes.put("CAN", "CA"); // Canada
+        codes.put("ITA", "IT"); // Italy
+        codes.put("GGY", "GG"); // Guernsey
+        codes.put("JEY", "JE"); // Jersey
+        codes.put("DNK", "DK"); // Denmark
+        codes.put("NOR", "NO"); // Norway
+        codes.put("SWE", "SE"); // Sweden
+        codes.put("AUT", "AT"); // Austria
+        codes.put("GRC", "GR"); // Greece
+        codes.put("DEU", "DE"); // Germany
+        codes.put("CHN", "CN"); // China
+        codes.put("PRT", "PT"); // Portugal
+        codes.put("BHR", "BH"); // Bahrain
+        codes.put("IRQ", "IQ"); // Iraq
+        codes.put("JOR", "JO"); // Jordan
+        codes.put("CYP", "CY"); // Cyprus
+        codes.put("TUN", "TN"); // Tunisia
+        codes.put("ZWE", "ZW"); // Zimbabwe
+        codes.put("GIB", "GI"); // Gibraltar
+        codes.put("ISL", "IS"); // Iceland
+        codes.put("NGA", "NG"); // Nigeria
+        codes.put("KWT", "KW"); // Kuwait
+        codes.put("SOM", "SO"); // Somalia
+        codes.put("RWA", "RW"); // Rwanda
+        codes.put("KHM", "KH"); // Cambodia
+        codes.put("UGA", "UG"); // Uganda
+        codes.put("MAC", "MO"); // Macao
+        codes.put("ZAR", "CD"); // Congo, Democratic Republic
+        codes.put("NIC", "NI"); // Nicaragua
+        codes.put("ZMB", "ZM"); // Zambia
+        codes.put("TWN", "TW"); // Taiwan
+        codes.put("MLI", "ML"); // Mali
+        codes.put("PAK", "PK"); // Pakistan
+        codes.put("BLZ", "BZ"); // Belize
+        codes.put("CPV", "CV"); // Cape Verde
+        codes.put("MKD", "MK"); // North Macedonia
+        codes.put("AGO", "AO"); // Angola
+        codes.put("VIR", "VI"); // U.S. Virgin Islands
+        codes.put("SEN", "SN"); // Senegal
+        codes.put("ALB", "AL"); // Albania
+        codes.put("SRB", "RS"); // Serbia
+        codes.put("BMU", "BM"); // Bermuda
+        codes.put("DJI", "DJ"); // Djibouti
+        codes.put("CYM", "KY"); // Cayman Islands
+        codes.put("GHA", "GH"); // Ghana
+        codes.put("DZA", "DZ"); // Algeria
+        codes.put("YEM", "YE"); // Yemen
+        codes.put("PSE", "PS"); // Palestine
+        codes.put("BRN", "BN"); // Brunei
+        codes.put("SUR", "SR"); // Suriname
+        codes.put("ATG", "AG"); // Antigua and Barbuda
+        codes.put("ABW", "AW"); // Aruba
+        codes.put("MNG", "MN"); // Mongolia
+        codes.put("MWI", "MW"); // Malawi
+        codes.put("GNQ", "GQ"); // Equatorial Guinea
+        codes.put("SMR", "SM"); // San Marino
+        codes.put("BIH", "BA"); // Bosnia and Herzegovina
+        codes.put("SDN", "SD"); // Sudan
+        codes.put("OMN", "OM"); // Oman
+        codes.put("LAO", "LA"); // Laos
+        codes.put("NAM", "NA"); // Namibia
+        codes.put("MDG", "MG"); // Madagascar
+        codes.put("QZZ", ""); // Special case, needs to be handled or excluded
+        codes.put("LBR", "LR"); // Liberia
+        codes.put("MRT", "MR"); // Mauritania
+        codes.put("COM", "KM"); // Comoros
+        codes.put("SWZ", "SZ"); // Eswatini
+        codes.put("COG", "CG"); // Congo
+        codes.put("GMB", "GM"); // Gambia
+        codes.put("SLE", "SL"); // Sierra Leone
+        codes.put("LSO", "LS"); // Lesotho
+        codes.put("ASM", "AS"); // American Samoa
+        codes.put("SXM", "SX"); // Sint Maarten
+        codes.put("BES", "BQ"); // Bonaire, Sint Eustatius, and Saba
+        codes.put("ETH", "ET"); // Ethiopia
+        codes.put("KIR", "KI"); // Kiribati
+        codes.put("CIV", "CI"); // Côte d'Ivoire
+        codes.put("BEN", "BJ"); // Benin
+        codes.put("BFA", "BF"); // Burkina Faso
+        codes.put("KNA", "KN"); // Saint Kitts and Nevis
+        codes.put("VUT", "VU"); // Vanuatu
+        codes.put("BDI", "BI"); // Burundi
+        codes.put("MOZ", "MZ"); // Mozambique
+        codes.put("TGO", "TG"); // Togo
+        codes.put("GAB", "GA"); // Gabon
+        codes.put("GIN", "GN"); // Guinea
+        codes.put("NER", "NE"); // Niger
+        codes.put("CAF", "CF"); // Central African Republic
+        codes.put("TCD", "TD"); // Chad
+        codes.put("COK", "CK"); // Cook Islands
+        codes.put("PNG", "PG"); // Papua New Guinea
+        codes.put("WSM", "WS"); // Samoa
+        codes.put("SSD", "SS"); // South Sudan
+        codes.put("VAT", "VA"); // Vatican City
+        codes.put("MCO", "MC"); // Monaco
+        codes.put("AND", "AD"); // Andorra
+        codes.put("AIA", "AI"); // Anguilla
+        codes.put("VGB", "VG"); // British Virgin Islands
+        codes.put("FJI", "FJ"); // Fiji
+        codes.put("BTN", "BT"); // Bhutan
+        codes.put("MNP", "MP"); // Northern Mariana Islands
+
+        return codes;
+    }
+
+    private static String findCardType(String cardNumber, List<BinRange> binRanges, String userCountry) {
+        long bin = Long.parseLong(cardNumber.substring(0, 6)); // Extracting BIN
+        Map<String, String> countryCodes = initializeCountryCodes();
+
+        for (BinRange binRange : binRanges) {
+            if (bin >= binRange.getRangeFrom() && bin <= binRange.getRangeTo()) {
+                String binCountry = countryCodes.get(binRange.getCountry()); // Convert 3-letter to 2-letter if necessary
+                if (binCountry != null && binCountry.equals(userCountry)) {
+                    return binRange.getType(); // Return "CC" or "DC"
+                }
+            }
+        }
+
+        return "Unknown";
+    }
+
+
+# 2
+

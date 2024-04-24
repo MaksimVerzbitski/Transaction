@@ -1,0 +1,11 @@
+"D:\Projects\Transation\test-data\manual test data 75% validations\input\users.csv"
+"D:\Projects\Transation\test-data\manual test data 75% validations\input\transactions.csv"
+"D:\Projects\Transation\test-data\manual test data 75% validations\input\bins.csv"
+"D:\Projects\Transation\test-data\manual test data 75% validations\output example\balances.csv"
+"D:\Projects\Transation\test-data\manual test data 75% validations\output example\events.csv"
+
+"D:\Projects\Transation\test-data\test random data (small)\input\users.csv"
+"D:\Projects\Transation\test-data\test random data (small)\input\transactions.csv"
+"D:\Projects\Transation\test-data\test random data (small)\input\bins.csv"
+"D:\Projects\Transation\test-data\test random data (small)\output example\balances.csv"
+"D:\Projects\Transation\test-data\test random data (small)\output example\events.csv"

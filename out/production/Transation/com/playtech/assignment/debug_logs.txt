@@ -1,0 +1,6 @@
+Starting the Transaction Processor
+Reading users from: D:\Projects\Transation\test-data\test random data (small)\input\users.csv
+Reading transactions from: D:\Projects\Transation\test-data\test random data (small)\input\transactions.csv
+Reading BIN mappings from: D:\Projects\Transation\test-data\test random data (small)\input\bins.csv
+Writing balances to: D:\Projects\Transation\test-data\test random data (small)\output example\balances.csv
+Writing balances to: D:\Projects\Transation\test-data\test random data (small)\output example\events.csv
