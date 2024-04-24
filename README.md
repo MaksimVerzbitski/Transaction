@@ -5,6 +5,18 @@ This project provides tools to validate International Bank Account Numbers (IBAN
 It supports validation against standardized IBAN formats for various countries <==>
 to ensure the correctness of bank account details in international transactions.
 
+## Features
+
+- Validate IBANs for correctness and country-specific formats.
+- Support for multiple countries with detailed regex validation rules.
+- Easy integration with existing systems.
+- No dependency on external services.
+
+## Requirements
+
+- Java 8 or higher
+- Maven (for dependency management and running the project)
+
 
 ## Installation
 
@@ -17,13 +29,11 @@ to ensure the correctness of bank account details in international transactions.
    cd Transaction
   
 3. Compile the project using Maven:
-  ```bash
-  mvn compile
+   ```bash
+   mvn compile
   
-
-
-
 ## Usage
+
 
 To validate an IBAN, run the `IbanValidator` class with the IBAN as an argument:
 
